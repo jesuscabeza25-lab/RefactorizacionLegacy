@@ -48,7 +48,7 @@ private static final double DESCUENTO\_TIPO2 \= 0.05;
 
 3. **Cláusulas de Guarda (*Guard Clauses*).**
 
-Se invirtió la validación inicial de rango (`importeBase > 0`) para aplicar un retorno temprano si el importe es inválido (`importeBase <= 0`). Esto permitió desanidar la lógica completa del algoritmo eliminando el uso de bloques `else`. 
+Se invirtió la validación inicial de rango (`importeBase > 0`), para aplicar un retorno temprano si el importe es inválido (`importeBase <= 0`). Esto permitió desanidar la lógica completa del algoritmo eliminando el uso de bloques `else`. 
 
 Código Refactorizado
 
