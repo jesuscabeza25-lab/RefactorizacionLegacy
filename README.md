@@ -69,10 +69,10 @@ public class FacturacionLegacy {
      \* Calcula el importe total final aplicando los descuentos correspondientes   
      \* según el tipo de cliente y su condición de socio VIP.  
      \*  
-     \* @param importeBase   El coste inicial de la factura antes de aplicar descuentos.  
-     \* @param tipoCliente   Identificador numérico del tipo de cliente (1, 2 u otros).  
-     \* @param esSocioVip    Indicador booleano que determina si el cliente cuenta con suscripción VIP.  
-     \* @return              El importe final calculado tras aplicar las deducciones.  
+     \* importeBase   El coste inicial de la factura antes de aplicar descuentos.  
+     \* tipoCliente   Identificador numérico del tipo de cliente (1, 2 u otros).  
+     \* esSocioVip    Indicador booleano que determina si el cliente cuenta con suscripción VIP.  
+     \*               El importe final calculado tras aplicar las deducciones.  
      \*/  
     public double calcularTotal(double importeBase, int tipoCliente, boolean esSocioVip) {  
         // Cláusula de guarda para filtrar casos no válidos de forma temprana  
