@@ -16,15 +16,15 @@
 
 * **Números mágicos.** ¿Qué significa 0.25 o 0.15? Son valores *hardcodeados* sin contexto. Si mañana el IVA o el descuento cambian, ¿dónde los buscamos?
 
-  -Los valores 0.25, 0.15 y 0.05 están incrustados directamente (*hardcodeados*) en las instrucciones de retorno. Carecen por completo de contexto semántico, lo que dificulta enormemente su mantenimiento si las políticas de descuento de la empresa cambian en el futuro.
+  Los valores 0.25, 0.15 y 0.05 están incrustados directamente (*hardcodeados*) en las instrucciones de retorno. Carecen por completo de contexto semántico, lo que dificulta enormemente su mantenimiento si las políticas de descuento de la empresa cambian en el futuro.
 
   * **Variables sin significado.** Nombres como cT, m, tC o dV no aportan ninguna semántica. Nos obligan a adivinar.
 
-  -Los identificadores utilizados (cT, m, tc/tC, dV) son excesivamente cortos y no aportan información sobre las reglas de negocio que representan. Obligan al lector a realizar un esfuerzo cognitivo innecesario para deducir qué datos maneja el método.
+  Los identificadores utilizados (cT, m, tc/tC, dV) son excesivamente cortos y no aportan información sobre las reglas de negocio que representan. Obligan al lector a realizar un esfuerzo cognitivo innecesario para deducir qué datos maneja el método.
 
   * **Código Spaghetti.** La anidación de múltiples if-else crea una estructura en forma de flecha \> que hace casi imposible seguir el flujo lógico de ejecución.
 
-  -La excesiva anidación de bloques if-else (hasta 3 niveles hacia la derecha) genera un flujo en forma de flecha (\>). Esto incrementa la complejidad del código y reduce de forma crítica su legibilidad.
+  La excesiva anidación de bloques if-else (hasta 3 niveles hacia la derecha) genera un flujo en forma de flecha (\>). Esto incrementa la complejidad del código y reduce de forma crítica su legibilidad.
 
 ## Fase 2: Refactorización Asistida por el IDE (Quirófano abierto)
 
